@@ -1,0 +1,176 @@
+/* default */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* main */
+
+body {
+	background-color: mediumaquamarine;
+}
+
+section#main {
+	display: flex;
+}
+
+nav {
+	width: 100px;
+}
+
+img {
+	width: 100%;
+}
+
+nav div {
+	display: inline-block;
+	margin: 25px 0 25px 25px;
+}
+
+nav p {
+	text-align: center;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* content */
+
+section#content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+/* when click the pc, this modal came up! */
+#modal {
+	/* display: none; */
+
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	/* padding: 25px; */
+	background-color: lightslategray;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+/* modal_header */
+
+#modal_header {
+	height: 25px;
+	padding: 0;
+	margin: 0;
+	background-color: mediumblue;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#modal_header button {
+	width: 20px;
+	height: 20px;
+	margin: 3px;
+	background-color: lightslategray;
+}
+
+#modal_header button#exit {
+	color:crimson;
+}
+
+/* modal_content */
+
+#modal_content {
+	display: flex;
+	text-align: center;
+}
+
+/* modal_img */
+
+#modal img {
+	margin: 50px 50px 25px 50px;
+	width: 200px;
+	height: auto;
+	border-radius: 150px;
+	border: dotted 2px white;
+}
+
+#modal_content #profile p {
+	font-weight: 500;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* modal_info */
+
+#modal_content #info {
+	/* margin: 100px 30px; */
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+}
+
+#info h3,
+#info p {
+	margin: 0 15px 10px 10px;
+}
+
+p#git {
+	margin-top: 25px;
+}
+
+#git a {
+	margin: 30px 15px;
+}
+
+
+/* media query */
+
+@media (min-width: 320px) and (max-width: 800px) {
+
+}
+
+
+/* talk event */
+
+#talk, #like {
+	position: relative;
+}
+
+#talk_box {
+	border-radius: 50px;
+	background-color: mintcream;
+	padding: 25px;
+	margin: 25px;
+	border: solid 3px black;
+}
+
+#talk_event {
+	position: absolute;
+    top: 0;
+    left: 100px;
+    width: 440px;
+    transform: translateY(-25%);
+}
+
+#like_box {
+	border-radius: 50px;
+	background-color: mediumaquamarine;
+	padding: 25px;
+	margin: 25px;
+	border: solid 3px black;
+}
+
+#like_event {
+	position: absolute;
+    top: 0;
+    left: 100px;
+    width: 440px;
+    transform: translateY(-25%);
+}
+
+#like_box img {
+	width: 50px;
+	height: auto;
+	margin: 10px;
+}
